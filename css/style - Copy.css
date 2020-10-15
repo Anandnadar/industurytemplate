@@ -1,0 +1,946 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:00,300,400,600,700,800,900");
+@font-face {
+  font-family: 'D-DIN Condensed-bold';
+  src: url("../fonts/d-din/D-DINCondensed-Bold.woff") format("woff"), url("../fonts/d-din/D-DINCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'D-DIN Condensed';
+  src: url("../fonts/d-din/D-DINCondensed.woff") format("woff"), url("../fonts/d-din/D-DINCondensed.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'D-DIN Exp';
+  src: url("../fonts/d-din/D-DINExp.woff") format("woff"), url("../fonts/d-din/D-DINExp.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'D-DIN Exp Bold';
+  src: url("../fonts/d-din/D-DINExp-Bold.woff") format("woff"), url("../fonts/d-din/D-DINExp-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'D-DIN Bold';
+  src: url("../fonts/d-din/D-DIN-Bold.woff") format("woff"), url("../fonts/d-din/D-DIN-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'D-DIN';
+  src: url("../fonts/d-din/D-DIN.woff") format("woff"), url("../fonts/d-din/D-DIN.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'D-DIN Italic';
+  src: url("../fonts/d-din/D-DIN-Italic.woff") format("woff"), url("../fonts/d-din/D-DIN-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+/* Salt Soctt Css start here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Nunito Sans", sans-serif; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.top-bar {
+  background-color: #232222;
+  padding: 10px 15px;
+  vertical-align: middle;
+  line-height: 17px; }
+  .top-bar .customer-mail {
+    width: 30%;
+    float: left; }
+    .top-bar .customer-mail span {
+      color: #fff; }
+  .top-bar .main-search {
+    width: 30%;
+    float: left;
+    position: relative; }
+    .top-bar .main-search input {
+      width: 100%;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background: transparent;
+      outline: none;
+      border-bottom: 1px solid #eee;
+      position: relative; }
+    .top-bar .main-search .search-icon {
+      position: absolute;
+      right: 05px;
+      top: 0px;
+      color: #fff; }
+  .top-bar .user-list {
+    width: 40%;
+    float: left; }
+    .top-bar .user-list ul {
+      text-align: right; }
+      .top-bar .user-list ul li {
+        color: #fff;
+        display: inline-block;
+        padding: 0px 30px;
+        border-right: 1px solid #eee; }
+        .top-bar .user-list ul li:last-child {
+          border-right: none; }
+        .top-bar .user-list ul li .pincode {
+          padding-left: 15px; }
+
+header {
+  padding: 0px 15px; }
+  header .logo {
+    float: left;
+    padding: 10px 0px; }
+    @media screen and (max-width: 1024px) {
+      header .logo {
+        padding: 10px; } }
+  header .menu-list {
+    float: right; }
+    @media screen and (max-width: 1024px) {
+      header .menu-list {
+        border-top: 1px solid #eee;
+        width: 100%; } }
+    header .menu-list ul li {
+      display: inline-block;
+      margin-right: 25px;
+      position: relative;
+      line-height: 100px;
+      cursor: pointer; }
+      @media screen and (max-width: 1024px) {
+        header .menu-list ul li {
+          display: block;
+          margin-right: 0px;
+          line-height: 50px;
+          padding: 0px 10px;
+          border-bottom: 1px solid #eee; } }
+      header .menu-list ul li a {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 600;
+        color: #0f0f0f;
+        font-size: 14px;
+        transition: all 0.5s ease-in;
+        position: relative; }
+        header .menu-list ul li a:hover {
+          text-decoration: none;
+          transition: all 0.5s ease-in;
+          color: #ffcb18; }
+      header .menu-list ul li i {
+        padding-left: 10px; }
+      header .menu-list ul li .custom-triangle {
+        width: 0;
+        height: 0;
+        border: 0 solid transparent;
+        border-right-width: 10px;
+        border-left-width: 10px;
+        border-bottom: 15px solid #fff;
+        /*transform: rotate(-360deg);*/
+        position: absolute;
+        bottom: 20px;
+        right: -5px;
+        z-index: 3;
+        visibility: hidden;
+        opacity: 0; }
+      header .menu-list ul li ul.custom-dropdown {
+        position: absolute;
+        min-width: 250px;
+        left: 50%;
+        margin: 0 auto;
+        top: 80%;
+        background-color: #fff;
+        padding: 30px 15px;
+        visibility: hidden;
+        opacity: 0;
+        box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.2);
+        transform: translateX(-50%);
+        z-index: 2;
+        transition: all 0.5s ease; }
+        @media screen and (max-width: 1024px) {
+          header .menu-list ul li ul.custom-dropdown {
+            position: relative;
+            margin-bottom: 10px;
+            display: none; } }
+        header .menu-list ul li ul.custom-dropdown li.custom-dropdown-list {
+          display: block;
+          line-height: 20px;
+          padding: 10px 0px;
+          position: relative; }
+          header .menu-list ul li ul.custom-dropdown li.custom-dropdown-list a:after {
+            content: '';
+            opacity: 0;
+            position: absolute;
+            height: 2px;
+            width: 80%;
+            background: linear-gradient(90deg, rgba(255, 210, 55, 0.966824) 35%, #fff5d1 100%);
+            margin: 0 auto;
+            top: 50%;
+            left: 110%;
+            transition: all 0.3s ease-in; }
+          header .menu-list ul li ul.custom-dropdown li.custom-dropdown-list a:hover:after {
+            opacity: 1;
+            transition: all 0.3s ease-in; }
+      header .menu-list ul li:hover .custom-dropdown {
+        visibility: visible;
+        transition: all 0.5s ease;
+        opacity: 1;
+        /*@media screen and (max-width: 1024px) {
+						
+						opacity: 0;
+						visibility: hidden;
+					}*/ }
+      header .menu-list ul li:hover .custom-triangle {
+        visibility: visible;
+        opacity: 1; }
+      header .menu-list ul li:first-child ul.custom-dropdown {
+        left: 0;
+        transform: none; }
+    @media screen and (max-width: 1024px) {
+      header .menu-list {
+        display: none; } }
+
+@media screen and (max-width: 1024px) {
+  .mobile-menu {
+    display: block;
+    float: right;
+    padding: 35px 10px;
+    margin-right: 15px;
+    font-size: 30px; } }
+
+@media screen and (min-width: 1024px) {
+  .custom-hide {
+    display: none; } }
+
+.silder .singlesilder .single-silder {
+  margin-bottom: 0px; }
+  .silder .singlesilder .single-silder li {
+    position: relative; }
+    .silder .singlesilder .single-silder li img {
+      max-width: 100%; }
+    .silder .singlesilder .single-silder li .silder-content {
+      position: absolute;
+      top: 30%;
+      right: 5%;
+      max-width: 900px;
+      line-height: 70px; }
+      .silder .singlesilder .single-silder li .silder-content h2 {
+        font-family: "D-DIN Condensed-bold";
+        color: #fff;
+        font-size: 90px;
+        font-weight: 900;
+        line-height: 1.2; }
+  .silder .singlesilder .single-silder .slick-dots {
+    bottom: 0px; }
+
+.about-us .about-image {
+  width: 30%;
+  float: left;
+  position: relative;
+  top: -80px;
+  margin-bottom: -80px; }
+  .about-us .about-image img {
+    width: 100%;
+    box-shadow: 7px 4px 10px -2px rgba(0, 0, 0, 0.2); }
+
+.about-us .about-content {
+  width: 70%;
+  float: left;
+  padding: 80px 50px 0; }
+  .about-us .about-content h1 {
+    text-transform: uppercase;
+    margin: 0px;
+    font-size: 48px;
+    font-family: "D-DIN";
+    margin-bottom: 20px; }
+    .about-us .about-content h1 .black-text {
+      color: #232222;
+      font-family: "Nunito Sans", sans-serif;
+      font-weight: 600; }
+    .about-us .about-content h1 .main-text {
+      color: #ffcb18;
+      font-family: "Nunito Sans", sans-serif;
+      font-weight: 600; }
+  .about-us .about-content p {
+    line-height: 20px;
+    color: #585858; }
+  .about-us .about-content .read-more {
+    float: right;
+    color: #585858;
+    font-family: "D-DIN Condensed-bold";
+    font-weight: 600; }
+
+/*product list section start here*/
+.product-listmain {
+  padding: 60px 0px;
+  background-color: #fbfbfb; }
+  .product-listmain.left {
+    background-color: #fff; }
+  .product-listmain .container-fluid {
+    padding: 0px 50px; }
+    .product-listmain .container-fluid .product-heading {
+      width: 40%;
+      float: right;
+      position: relative; }
+      .product-listmain .container-fluid .product-heading.left-list {
+        float: left; }
+      .product-listmain .container-fluid .product-heading .heading-img {
+        width: 70%;
+        float: right;
+        display: block; }
+        .product-listmain .container-fluid .product-heading .heading-img.left-heading-img {
+          float: left; }
+        .product-listmain .container-fluid .product-heading .heading-img img {
+          max-width: 100%; }
+      .product-listmain .container-fluid .product-heading .product-overimg {
+        position: absolute;
+        left: 10%;
+        width: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block; }
+        .product-listmain .container-fluid .product-heading .product-overimg img {
+          max-width: 100%; }
+        .product-listmain .container-fluid .product-heading .product-overimg .product-title {
+          position: absolute;
+          left: 90%;
+          top: 50%;
+          transform: translateY(-50%);
+          transform: rotate(90deg); }
+          .product-listmain .container-fluid .product-heading .product-overimg .product-title.left-title {
+            left: -25%;
+            top: 50%;
+            transform: translateY(-50%);
+            transform: rotate(-90deg); }
+          .product-listmain .container-fluid .product-heading .product-overimg .product-title span {
+            font-family: "D-DIN Condensed-bold";
+            font-weight: 600;
+            font-size: 28px;
+            color: #fff;
+            letter-spacing: 7px; }
+    .product-listmain .container-fluid .product-list {
+      width: 60%;
+      float: left;
+      position: relative;
+      padding-right: 70px; }
+      .product-listmain .container-fluid .product-list .single-product {
+        width: calc(50% - 50px);
+        float: left;
+        margin-right: 50px;
+        box-shadow: 7px 4px 10px -2px rgba(0, 0, 0, 0.2); }
+        .product-listmain .container-fluid .product-list .single-product .product-image {
+          position: relative; }
+          .product-listmain .container-fluid .product-list .single-product .product-image img {
+            max-width: 100%; }
+          .product-listmain .container-fluid .product-list .single-product .product-image .product-icon .product-eye {
+            position: absolute;
+            left: 10px;
+            bottom: 20px; }
+          .product-listmain .container-fluid .product-list .single-product .product-image .product-icon .product-wishlist {
+            position: absolute;
+            right: 10px;
+            bottom: 20px; }
+        .product-listmain .container-fluid .product-list .single-product .product-content {
+          background-color: #fff;
+          text-align: center;
+          padding: 10px 0px 0px; }
+          .product-listmain .container-fluid .product-list .single-product .product-content .product-title {
+            font-size: 24px;
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 600;
+            display: block; }
+          .product-listmain .container-fluid .product-list .single-product .product-content .product-price {
+            display: block;
+            padding: 10px 0px; }
+          .product-listmain .container-fluid .product-list .single-product .product-content .custom-dropdown {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #f6f6f6;
+            outline: none;
+            box-shadow: none; }
+          .product-listmain .container-fluid .product-list .single-product .product-content .qauntity-product {
+            padding: 10px 0px; }
+            .product-listmain .container-fluid .product-list .single-product .product-content .qauntity-product .sub {
+              background-color: #b2b2b2;
+              border: none;
+              box-shadow: none;
+              outline: none;
+              color: #fff;
+              width: 20px;
+              height: 20px; }
+            .product-listmain .container-fluid .product-list .single-product .product-content .qauntity-product .field {
+              width: 20%;
+              text-align: center;
+              color: #232222;
+              background: #f6f6f6;
+              border: none;
+              box-shadow: none;
+              padding: 2px 0px; }
+            .product-listmain .container-fluid .product-list .single-product .product-content .qauntity-product .add {
+              background-color: #b2b2b2;
+              border: none;
+              box-shadow: none;
+              outline: none;
+              color: #fff;
+              width: 20px;
+              height: 20px; }
+          .product-listmain .container-fluid .product-list .single-product .product-content .product-button {
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 600;
+            text-transform: capitalize;
+            background-color: #d6d6d6;
+            color: #fff;
+            width: 100%;
+            border: none;
+            padding: 15px 0px;
+            transition: all 0.5s ease-in; }
+            .product-listmain .container-fluid .product-list .single-product .product-content .product-button:hover {
+              background-color: #ffcb18;
+              transition: all 0.5s ease-in; }
+      .product-listmain .container-fluid .product-list .prduct-seemore {
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        transform: translateY(-50%);
+        cursor: pointer; }
+        .product-listmain .container-fluid .product-list .prduct-seemore .see-circle {
+          width: 20px;
+          height: 20px;
+          background: #ffcb18;
+          border-radius: 50%;
+          margin: 0 auto;
+          vertical-align: middle; }
+          .product-listmain .container-fluid .product-list .prduct-seemore .see-circle:before {
+            font-family: FontAwesome;
+            content: "\f178";
+            display: inline-block;
+            padding-right: 3px;
+            vertical-align: middle;
+            font-weight: 300; }
+        .product-listmain .container-fluid .product-list .prduct-seemore .see-more span {
+          color: #585858;
+          font-family: "Nunito Sans", sans-serif;
+          font-weight: 600; }
+
+/*subscription plan*/
+.subscription-plan {
+  background-color: #fbfbfb;
+  padding: 60px 0px; }
+  .subscription-plan .heading-title {
+    margin-bottom: 30px; }
+    .subscription-plan .heading-title h2 {
+      text-transform: uppercase;
+      margin: 0px;
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center; }
+      .subscription-plan .heading-title h2 .black-text {
+        font-family: "D-DIN Condensed-bold";
+        font-weight: 600;
+        color: #232222; }
+      .subscription-plan .heading-title h2 .main-text {
+        font-family: "D-DIN Condensed-bold";
+        font-weight: 600;
+        color: #ffcb18; }
+    .subscription-plan .heading-title p {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 22px;
+      word-break: break-all;
+      font-size: 17px; }
+  .subscription-plan .subscription-body .subscription-grid .single-grid {
+    width: 21%;
+    float: left;
+    margin: 2%;
+    box-shadow: 7px 4px 10px -2px rgba(0, 0, 0, 0.2); }
+    .subscription-plan .subscription-body .subscription-grid .single-grid .product-img img {
+      max-width: 100%; }
+    .subscription-plan .subscription-body .subscription-grid .single-grid .product-content {
+      text-align: center;
+      background-color: #fff; }
+      .subscription-plan .subscription-body .subscription-grid .single-grid .product-content .product-title {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 600;
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0px 10px 0px; }
+      .subscription-plan .subscription-body .subscription-grid .single-grid .product-content .product-price {
+        font-family: "Nunito Sans", sans-serif;
+        margin-right: 20px;
+        font-size: 17px; }
+      .subscription-plan .subscription-body .subscription-grid .single-grid .product-content .product-permonth {
+        text-transform: capitalize;
+        padding: 10px 0px 0px;
+        font-size: 17px; }
+      .subscription-plan .subscription-body .subscription-grid .single-grid .product-content .offered-price {
+        padding: 10px 0px 10px; }
+        .subscription-plan .subscription-body .subscription-grid .single-grid .product-content .offered-price .dash-price {
+          color: #a3a3a3;
+          font-family: "Nunito Sans", sans-serif;
+          margin-right: 05px;
+          font-size: 17px; }
+        .subscription-plan .subscription-body .subscription-grid .single-grid .product-content .offered-price .dash-offer {
+          color: #a3a3a3;
+          font-family: "Nunito Sans", sans-serif;
+          font-size: 17px; }
+      .subscription-plan .subscription-body .subscription-grid .single-grid .product-content .product-button {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 600;
+        text-transform: capitalize;
+        background-color: #d6d6d6;
+        color: #fff;
+        width: 100%;
+        border: none;
+        padding: 15px 0px;
+        transition: all 0.5s ease-in; }
+        .subscription-plan .subscription-body .subscription-grid .single-grid .product-content .product-button:hover {
+          background-color: #ffcb18;
+          transition: all 0.5s ease-in; }
+  .subscription-plan .subscription-body .prduct-seemore {
+    padding: 50px 0px 0px;
+    cursor: pointer; }
+    .subscription-plan .subscription-body .prduct-seemore .see-circle {
+      width: 20px;
+      height: 20px;
+      background: #ffcb18;
+      border-radius: 50%;
+      margin: 0 auto;
+      vertical-align: middle; }
+      .subscription-plan .subscription-body .prduct-seemore .see-circle:before {
+        font-family: FontAwesome;
+        content: "\f178";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 300; }
+    .subscription-plan .subscription-body .prduct-seemore .see-more {
+      margin: 20px auto 0px;
+      text-align: center; }
+      .subscription-plan .subscription-body .prduct-seemore .see-more span {
+        color: #585858;
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 17px; }
+
+/*seection stock with bulk start here*/
+.stock-bulk {
+  background-color: #fff;
+  padding: 60px 0px;
+  position: relative; }
+  .stock-bulk .stock-heading {
+    width: 100%;
+    display: table; }
+    .stock-bulk .stock-heading .stock-left {
+      display: table-cell;
+      width: 50%;
+      position: relative;
+      vertical-align: top; }
+      .stock-bulk .stock-heading .stock-left .stock-left-heading {
+        padding: 30px 20px 150px;
+        width: 50%;
+        background-color: #ffcb18;
+        margin-bottom: 80px; }
+        .stock-bulk .stock-heading .stock-left .stock-left-heading h6 {
+          font-family: "Nunito Sans", sans-serif;
+          font-weight: 600px;
+          color: #fff;
+          font-size: 18px;
+          margin-bottom: 20px; }
+        .stock-bulk .stock-heading .stock-left .stock-left-heading p {
+          line-height: 20px;
+          color: #fff;
+          text-transform: capitalize; }
+      .stock-bulk .stock-heading .stock-left .stock-left-image {
+        position: absolute;
+        right: 10%;
+        width: 70%;
+        bottom: 0; }
+        .stock-bulk .stock-heading .stock-left .stock-left-image img {
+          max-width: 100%; }
+    .stock-bulk .stock-heading .stock-right {
+      width: 50%;
+      display: table-cell;
+      vertical-align: top; }
+      .stock-bulk .stock-heading .stock-right h2 {
+        font-size: 35px;
+        font-family: "D-DIN";
+        line-height: 50px;
+        margin-bottom: 30px; }
+        .stock-bulk .stock-heading .stock-right h2 .first-block {
+          display: block; }
+      .stock-bulk .stock-heading .stock-right .stock-right-body p {
+        line-height: 20px;
+        font-family: "Nunito Sans", sans-serif; }
+      .stock-bulk .stock-heading .stock-right .prduct-seemore {
+        padding: 40px 0px 0px; }
+        .stock-bulk .stock-heading .stock-right .prduct-seemore .see-circle {
+          width: 20px;
+          height: 20px;
+          background: #ffcb18;
+          border-radius: 50%;
+          margin: 0 auto;
+          vertical-align: middle;
+          display: inline-block; }
+          .stock-bulk .stock-heading .stock-right .prduct-seemore .see-circle:before {
+            font-family: FontAwesome;
+            content: "\f178";
+            display: inline-block;
+            padding-right: 3px;
+            vertical-align: middle;
+            font-weight: 300; }
+        .stock-bulk .stock-heading .stock-right .prduct-seemore .see-more {
+          display: inline-block;
+          padding-right: 60px; }
+          .stock-bulk .stock-heading .stock-right .prduct-seemore .see-more span {
+            color: #585858;
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 600; }
+      .stock-bulk .stock-heading .stock-right .stock-right-img {
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        text-align: right; }
+        .stock-bulk .stock-heading .stock-right .stock-right-img img {
+          width: 70%; }
+
+/*seection stock with bulk End here*/
+/*section start of the blogs */
+.our-blogs {
+  padding: 60px 0px;
+  /*background-color:$light-bg;*/
+  background-image: url("../images/bg-blog.jpg");
+  background-size: cover; }
+  .our-blogs .heading-title {
+    margin-bottom: 30px; }
+    .our-blogs .heading-title h2 {
+      text-transform: uppercase;
+      margin: 0px;
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center; }
+      .our-blogs .heading-title h2 .black-text {
+        font-family: "D-DIN Condensed-bold";
+        font-weight: 600;
+        color: #232222; }
+      .our-blogs .heading-title h2 .main-text {
+        font-family: "D-DIN Condensed-bold";
+        font-weight: 600;
+        color: #ffcb18; }
+    .our-blogs .heading-title p {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 22px;
+      word-break: break-all;
+      font-size: 17px; }
+  .our-blogs .blog-body {
+    max-width: 1000px;
+    margin: 0 auto; }
+    .our-blogs .blog-body .single-blog {
+      width: 29%;
+      float: left;
+      margin: 2%; }
+      .our-blogs .blog-body .single-blog .blog-image img {
+        max-width: 100%; }
+      .our-blogs .blog-body .single-blog .blog-content {
+        background-color: #fff; }
+        .our-blogs .blog-body .single-blog .blog-content h6 {
+          margin-bottom: 15px;
+          font-family: "Nunito Sans", sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 18px;
+          padding: 20px 20px 0px; }
+        .our-blogs .blog-body .single-blog .blog-content ul {
+          margin-bottom: 15px;
+          padding: 0px 20px; }
+          .our-blogs .blog-body .single-blog .blog-content ul li {
+            display: inline-block;
+            padding-right: 19px; }
+            .our-blogs .blog-body .single-blog .blog-content ul li span {
+              color: #585757; }
+            .our-blogs .blog-body .single-blog .blog-content ul li i {
+              color: #585757;
+              cursor: pointer; }
+            .our-blogs .blog-body .single-blog .blog-content ul li:last-child {
+              padding-right: 0px;
+              float: right; }
+        .our-blogs .blog-body .single-blog .blog-content p {
+          font-family: "Nunito Sans", sans-serif;
+          margin-bottom: 15px;
+          text-align: left;
+          color: #585757;
+          padding: 0px 20px;
+          line-height: 20px;
+          font-size: 16px; }
+        .our-blogs .blog-body .single-blog .blog-content .read-more-button {
+          font-family: "Nunito Sans", sans-serif;
+          font-weight: 600;
+          text-transform: capitalize;
+          background-color: #d6d6d6;
+          color: #fff;
+          width: 100%;
+          border: none;
+          padding: 15px 0px;
+          transition: all 0.5s ease-in; }
+          .our-blogs .blog-body .single-blog .blog-content .read-more-button:hover {
+            background-color: #ffcb18;
+            transition: all 0.5s ease-in; }
+  .our-blogs .prduct-seemore {
+    padding: 30px 0px 0px;
+    cursor: pointer; }
+    .our-blogs .prduct-seemore .see-circle {
+      width: 20px;
+      height: 20px;
+      background: #ffcb18;
+      border-radius: 50%;
+      margin: 0 auto;
+      vertical-align: middle; }
+      .our-blogs .prduct-seemore .see-circle:before {
+        font-family: FontAwesome;
+        content: "\f178";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 300; }
+    .our-blogs .prduct-seemore .see-more {
+      margin: 20px auto 0px;
+      text-align: center; }
+      .our-blogs .prduct-seemore .see-more span {
+        color: #585858;
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 17px; }
+
+/*section End of the blogs */
+/*section start of the testimonal */
+.testtimonal {
+  padding: 60px 0px;
+  background-color: #fbfbfb;
+  position: relative; }
+  .testtimonal .heading-title {
+    margin-bottom: 30px; }
+    .testtimonal .heading-title h2 {
+      text-transform: uppercase;
+      margin: 0px;
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center; }
+      .testtimonal .heading-title h2 .black-text {
+        font-family: "D-DIN Condensed-bold";
+        font-weight: 600;
+        color: #232222; }
+      .testtimonal .heading-title h2 .main-text {
+        font-family: "D-DIN Condensed-bold";
+        font-weight: 600;
+        color: #ffcb18; }
+  .testtimonal .testimonal-silder .test-silder {
+    background-color: #fff; }
+    .testtimonal .testimonal-silder .test-silder li {
+      padding: 0 50px;
+      box-shadow: 0 0 25px rgba(40, 47, 60, 0.05), 0 20px 25px rgba(40, 47, 60, 0.05), 0 3px 4px rgba(40, 47, 60, 0.05); }
+      .testtimonal .testimonal-silder .test-silder li .test-img {
+        width: 20%;
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        height: 100%; }
+        .testtimonal .testimonal-silder .test-silder li .test-img img {
+          height: auto;
+          position: absolute;
+          width: 100%;
+          margin: 0 auto;
+          top: 30px;
+          left: 0;
+          right: 0; }
+      .testtimonal .testimonal-silder .test-silder li .test-content {
+        width: 80%;
+        padding: 30px;
+        display: table-cell;
+        vertical-align: middle; }
+        .testtimonal .testimonal-silder .test-silder li .test-content .testimonal-name {
+          font-family: "Nunito Sans", sans-serif;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 24px;
+          margin-bottom: 10px;
+          color: #232222; }
+        .testtimonal .testimonal-silder .test-silder li .test-content .testimonal-subheading {
+          color: #737373;
+          margin-bottom: 20px;
+          font-family: "Nunito Sans", sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 16px; }
+        .testtimonal .testimonal-silder .test-silder li .test-content p {
+          line-height: 25px; }
+  .testtimonal .testimonal-right-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right; }
+    .testtimonal .testimonal-right-img img {
+      width: 70%; }
+
+/*section End of the testimonal */
+/*section start of the new letter */
+.news-letter {
+  padding: 60px 0px;
+  background-image: url("../images/new-letter-bg.png");
+  background-size: cover; }
+  .news-letter .news-letter-heading p {
+    font-family: "D-DIN Condensed-bold";
+    font-weight: 600;
+    font-size: 65px;
+    color: #232222;
+    max-width: 700px;
+    line-height: 1.2;
+    margin-bottom: 30px; }
+  .news-letter .news-letter-input {
+    position: relative;
+    width: 50%;
+    margin: 50px 0px; }
+    .news-letter .news-letter-input .news-input {
+      height: 40px;
+      width: 100%;
+      border: none;
+      padding-left: 20px;
+      outline: none;
+      position: relative; }
+    .news-letter .news-letter-input .see-circle {
+      width: 20px;
+      height: 20px;
+      background: #ffcb18;
+      border-radius: 50%;
+      margin: 0 auto;
+      vertical-align: middle;
+      position: absolute;
+      transform: translateY(-50%);
+      right: 5%;
+      top: 50%; }
+      .news-letter .news-letter-input .see-circle:before {
+        font-family: FontAwesome;
+        content: "\f178";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 300; }
+
+/*section End of the new letter */
+/*section start of the dummy text */
+.text-dummy {
+  padding: 60px 0px;
+  position: relative;
+  border-bottom: 1px solid #878787; }
+  .text-dummy .heading-title {
+    margin-bottom: 30px; }
+    .text-dummy .heading-title h2 {
+      text-transform: uppercase;
+      margin: 0px;
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center; }
+      .text-dummy .heading-title h2 .black-text {
+        font-family: "D-DIN Condensed-bold";
+        font-weight: 600;
+        color: #232222; }
+      .text-dummy .heading-title h2 .main-text {
+        font-family: "D-DIN Condensed-bold";
+        font-weight: 600;
+        color: #ffcb18; }
+    .text-dummy .heading-title p {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 22px;
+      word-break: break-all;
+      font-size: 17px;
+      font-family: "Nunito Sans", sans-serif; }
+  .text-dummy .dummy-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right; }
+    .text-dummy .dummy-image img {
+      width: 80%; }
+
+/*section end of the dummy text */
+.aboutuspage .abtbanner {
+  height: 60vh;
+  background-image: url("../images/img/aboutusbanner.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.custom-footer {
+  padding: 60px 0px; }
+  .custom-footer .footer-links .single-footer {
+    width: 25%;
+    float: left;
+    text-align: center; }
+    .custom-footer .footer-links .single-footer .footer-quick {
+      display: inline-block; }
+      .custom-footer .footer-links .single-footer .footer-quick .heading-text {
+        padding: 0px 0px 10px;
+        font-family: "D-DIN Condensed-bold";
+        font-size: 20px;
+        text-align: left; }
+      .custom-footer .footer-links .single-footer .footer-quick .simple-link {
+        padding: 10px 0px;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: left; }
+
+.tiny-footer {
+  background-color: #232222;
+  padding: 20px 0px; }
+  .tiny-footer .tiny-footer-text {
+    text-align: center; }
+    .tiny-footer .tiny-footer-text span {
+      font-size: 18px;
+      font-family: "Nunito Sans", sans-serif;
+      color: #fff; }
+
+/*# sourceMappingURL=style - Copy.css.map */
