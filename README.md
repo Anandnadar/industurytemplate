@@ -1,0 +1,1 @@
+# industurytemplate
